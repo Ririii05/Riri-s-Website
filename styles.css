@@ -222,44 +222,56 @@ html {
   }
 }
 
-
 /* Hero Section */
 .hero {
-  background-image: url('hero-image.jpg');
+  background-image: url('hero-image.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
 }
 
 .hero-content h1 {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 1.5em;
+  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
-.hero .btn {
-  padding: 15px 30px;
-  background-color: #ffea28;
-  color: black;
-  font-size: 1.2em;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.hero .btn:hover {
-  background-color: #E1DF66;
+.btn {
+  padding: 10px 22px;
+  background-color: #ffea28;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e1df66;
+  transform: scale(1.05);
 }
 
 /* Featured Products Section */
