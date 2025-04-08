@@ -1,3 +1,28 @@
+@media only screen and (max-width: 768px) {
+    /* Mga estilo para sa mobile */
+    .container {
+        padding: 20px;
+    }
+    .product {
+        display: block;
+        width: 100%;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
