@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riri's Laugh Tale Treasures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+  <div class="logo">
+    <span class="logo-text">Riri's Laugh Tale Treasures</span> <span class="logo-treasures"></span>
+  </div>
+  <div class="toggle-bar" onclick="toggleMenu()">&#9776;</div>
+  <nav class="navbar">
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+ <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Welcome to Riri's Laugh Tale Treasures</h1>
+    <p>Your ultimate destination for One Piece collectibles!</p>
+    <div class="btn-group">
+      <button class="btn" onclick="openModal('login')">LOG IN</button>
+      <button class="btn" onclick="openModal('signup')">SIGN UP</button>
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Login/Signup Form -->
+<div class="container" id="modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+
+  <!-- Login Form -->
+  <div class="login form">
+    <h1>LOG IN</h1>
+    <form>
+      <input type="text" placeholder="Enter your email" required>
+      <input type="password" placeholder="Enter your password" required>
+      <a href="#">Forgot password?</a>
+      <input type="submit" class="button" value="Login">
+    </form>
+    <div class="signup">
+      <span>Don't have an account? <label onclick="openModal('signup')">SIGN UP</label></span>
+    </div>
+  </div>
+
+  <!-- Signup Form -->
+  <div class="registration form" style="display:none;">
+    <h1>SIGN UP</h1>
+    <form>
+      <input type="text" placeholder="Enter your email" required>
+      <input type="password" placeholder="Create a password" required>
+      <input type="password" placeholder="Confirm your password" required>
+      <input type="submit" class="button" value="Signup">
+    </form>
+    <div class="login">
+      <span>Already have an account? <label onclick="openModal('login')">LOG IN</label></span>
+    </div>
+  </div>
+</div>
+
+  <!-- Featured Products Section -->
+<section class="featured-products" id="products">
+
+  <section class="filter-section">
+    <h3>CATEGORIES</h3>
+    <div class="filter-options">
+      <button class="filter-option active" data-category="all">All</button>
+      <button class="filter-option" data-category="strawhat">Strawhat Figures</button>
+      <button class="filter-option" data-category="marine">Marine Figures</button>
+      <button class="filter-option" data-category="warlord">Warlord Figures</button>
+      <button class="filter-option" data-category="emperors">Four Emperors Figures</button>
+      <button class="filter-option" data-category="generation">Worst Generation Figures</button>
+    </div>
+  </section>
+
+  
+
+<!-- Strawhat Figures -->
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="category-product-card" data-category="strawhat" data-name="Luffy Figure" data-description="A detailed figure of Monkey D. Luffy in his iconic straw hat." data-image="luffy-figure.jpg">
+    <img src="figures/luffy-figure.webp" alt="Luffy Figure">
+    <h3>Luffy Figure</h3>
+    <p>A detailed figure of Monkey D. Luffy in his iconic straw hat.</p>
+    <p class="price">₱1,800.00</p> <!-- Price Added -->
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  <!-- Product 2 -->
+  <div class="category-product-card" data-category="strawhat" data-name="Zoro Figure" data-description="A figure of Zoro, the swordsman of the Strawhat Pirates, in action." data-image="zoro-figure.jpg">
+    <img src="figures/zoro-figure.webp" alt="Zoro Figure">
+    <h3>Zoro Figure</h3>
+    <p>A figure of Zoro, the swordsman of the Strawhat Pirates, in action.</p>
+    <p class="price">₱2,200.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  <!-- Product 3 -->
+  <div class="category-product-card" data-category="strawhat" data-name="Nami Figure" data-description="Nami, the navigator of the Strawhat Pirates, with a stunning pose." data-image="nami-figure.jpg">
+    <img src="figures/nami-figure.webp" alt="Nami Figure">
+    <h3>Nami Figure</h3>
+    <p>Nami, the navigator of the Strawhat Pirates, with a stunning pose.</p>
+    <p class="price">₱2,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  <!-- Product 4 -->
+  <div class="category-product-card" data-category="strawhat" data-name="Sanji Figure" data-description="Sanji, the Strawhat Pirates' cook, striking a cool pose." data-image="sanji-figure.jpg">
+    <img src="figures/sanji-figure.webp" alt="Sanji Figure">
+    <h3>Sanji Figure</h3>
+    <p>Sanji, the Strawhat Pirates' cook, striking a cool pose.</p>
+    <p class="price">₱2,100.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  <!-- Product 5 -->
+  <div class="category-product-card" data-category="strawhat" data-name="Chopper Figure" data-description="A cute, colorful figure of the doctor of the Strawhat Pirates." data-image="chopper-figure.jpg">
+    <img src="figures/chopper-figure.webp" alt="Chopper Figure">
+    <h3>Chopper Figure</h3>
+    <p>A cute, colorful figure of the doctor of the Strawhat Pirates.</p>
+    <p class="price">₱2,300.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+<!-- Product 6 -->
+<div class="category-product-card" data-category="strawhat" data-name="Usopp Figure" data-description="Usopp, the sniper of the Strawhat Pirates, in a dynamic action pose." data-image="usopp-figure.jpg">
+  <img src="figures/usopp-figure.webp" alt="Usopp Figure">
+  <h3>Usopp Figure</h3>
+  <p>Usopp, the sniper of the Strawhat Pirates, in a dynamic action pose.</p>
+  <p class="price">₱2,600.00</p>
+  <button class="btn buy-btn">Buy</button>
+  <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+</div>
+<!-- Product 7 -->
+<div class="category-product-card" data-category="strawhat" data-name="Franky Figure" data-description="Franky, the shipwright of the Strawhat Pirates, with his mechanical arms." data-image="franky-figure.jpg">
+  <img src="figures/franky-figure.webp" alt="Franky Figure">
+  <h3>Franky Figure</h3>
+  <p>Franky, the shipwright of the Strawhat Pirates, with his mechanical arms.</p>
+  <p class="price">₱2,800.00</p>
+  <button class="btn buy-btn">Buy</button>
+  <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+</div>
+<!-- Product 8 -->
+<div class="category-product-card" data-category="strawhat" data-name="Brook Figure" data-description="Brook, the musician of the Strawhat Pirates, in a lively pose." data-image="brook-figure.jpg">
+  <img src="figures/brook-figure.png" alt="Brook Figure">
+  <h3>Brook Figure</h3>
+  <p>Brook, the musician of the Strawhat Pirates, in a lively pose.</p>
+  <p class="price">₱2,500.00</p>
+  <button class="btn buy-btn">Buy</button>
+  <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+</div>
+<!-- Product 9 -->
+<div class="category-product-card" data-category="strawhat" data-name="Jinbe Figure" data-description="Jinbe, the helmsman of the Strawhat Pirates, with a calm demeanor." data-image="jinbe-figure.jpg">
+  <img src="figures/jinbe-figure.png" alt="Jinbe Figure">
+  <h3>Jinbe Figure</h3>
+  <p>Jinbe, the helmsman of the Strawhat Pirates, with a calm demeanor.</p>
+  <p class="price">₱1,800.00</p>
+  <button class="btn buy-btn">Buy</button>
+  <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+</div>
+<!-- Product 10 -->
+<div class="category-product-card" data-category="strawhat" data-name="Robin Figure" data-description="Nico Robin, the archaeologist of the Strawhat Pirates, in an elegant pose." data-image="robin-figure.jpg">
+  <img src="figures/robin-figure.png" alt="Robin Figure">
+  <h3>Robin Figure</h3>
+  <p>Nico Robin, the archaeologist of the Strawhat Pirates, in an elegant pose.</p>
+  <p class="price">₱1,900.00</p>
+  <button class="btn buy-btn">Buy</button>
+  <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+</div>
+    
+    <!-- Marine Figures -->
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="category-product-card" data-category="marine" data-name="Sakazuki (Akainu) Figure" data-description="A figure of Sakazuki (Akainu), the Admiral of the Marines." data-image="akainu-figure.jpg">
+    <img src="figures/sakazuki-figure.webp" alt="Sakazuki Figure">
+    <h3>Sakazuki Figure</h3>
+    <p>A figure of Sakazuki (Akainu), the Admiral of the Marines.</p>
+    <p class="price">₱2,600.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="category-product-card" data-category="marine" data-name="Kizaru Figure" data-description="A figure of Borsalino (Kizaru), one of the Admirals of the Marines." data-image="kizaru-figure.jpg">
+    <img src="figures/kizaru-figure.webp" alt="Kizaru Figure">
+    <h3>Kizaru Figure</h3>
+    <p>A figure of Borsalino (Kizaru), one of the Admirals of the Marines.</p>
+    <p class="price">₱2,700.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="category-product-card" data-category="marine" data-name="Aokiji Figure" data-description="A figure of Aokiji, the former Admiral of the Marines." data-image="aokiji-figure.jpg">
+    <img src="figures/aokji-figure.jpg" alt="Aokiji Figure">
+    <h3>Aokiji Figure</h3>
+    <p>A figure of Aokiji, the former Admiral of the Marines.</p>
+    <p class="price">₱3,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="category-product-card" data-category="marine" data-name="Smoker Figure" data-description="A figure of Smoker, the Marine officer with the Moku Moku no Mi." data-image="smoker-figure.jpg">
+    <img src="figures/smoker-figure.jpg" alt="Smoker Figure">
+    <h3>Smoker Figure</h3>
+    <p>A figure of Smoker, the Marine officer with the Moku Moku no Mi.</p>
+    <p class="price">₱3,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="category-product-card" data-category="marine" data-name="Tashigi Figure" data-description="A figure of Tashigi, a Marine officer with the swordsmanship skills." data-image="tashigi-figure.jpg">
+    <img src="figures/tashigi-figure.jpg" alt="Tashigi Figure">
+    <h3>Tashigi Figure</h3>
+    <p>A figure of Tashigi, a Marine officer with the swordsmanship skills.</p>
+    <p class="price">₱2,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="category-product-card" data-category="marine" data-name="Coby Figure" data-description="A figure of Coby, a former Marine recruit turned important figure in the Marines." data-image="coby-figure.jpg">
+    <img src="figures/coby-figure.webp" alt="Coby Figure">
+    <h3>Coby Figure</h3>
+    <p>A figure of Coby, a former Marine recruit turned important figure in the Marines.</p>
+    <p class="price">₱2,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="category-product-card" data-category="marine" data-name="Garp Figure" data-description="A figure of Monkey D. Garp, a Marine legend and grandfather of Luffy." data-image="garp-figure.jpg">
+    <img src="figures/garp-figure.webp" alt="Garp Figure">
+    <h3>Garp Figure</h3>
+    <p>A figure of Monkey D. Garp, a Marine legend and grandfather of Luffy.</p>
+    <p class="price">₱2,900.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="category-product-card" data-category="marine" data-name="Fujitora Figure" data-description="A figure of Issho (Fujitora), the blind Admiral with a sense of justice." data-image="fujitora-figure.jpg">
+    <img src="figures/fujitora-figure.webp" alt="Fujitora Figure">
+    <h3>Fujitora Figure</h3>
+    <p>A figure of Issho (Fujitora), the blind Admiral with a sense of justice.</p>
+    <p class="price">₱1,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="category-product-card" data-category="marine" data-name="Hina Figure" data-description="A figure of Hina, a Marine officer with the power to control cages." data-image="hina-figure.jpg">
+    <img src="figures/hina-figure.jpg" alt="Hina Figure">
+    <h3>Hina Figure</h3>
+    <p>A figure of Hina, a Marine officer with the power to control cages.</p>
+    <p class="price">₱2,400.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="category-product-card" data-category="marine" data-name="Sentomaru Figure" data-description="A figure of Sentomaru, the Marine officer and bodyguard of Dr. Vegapunk." data-image="sentomaru-figure.jpg">
+    <img src="figures/sentomaru-figure.webp" alt="Sentomaru Figure">
+    <h3>Sentomaru Figure</h3>
+    <p>A figure of Sentomaru, the Marine officer and bodyguard of Dr. Vegapunk.</p>
+    <p class="price">₱3,100.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+    <!-- Warlord Figures -->
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="category-product-card" data-category="warlord" data-name="Dracule Mihawk Figure" data-description="A figure of Dracule Mihawk, the world's greatest swordsman and a former Warlord of the Sea." data-image="mihawk-figure.jpg">
+    <img src="figures/mihawk-figure.png" alt="Dracule Mihawk Figure">
+    <h3>Dracule Mihawk Figure</h3>
+    <p>A figure of Dracule Mihawk, the world's greatest swordsman and a former Warlord of the Sea.</p>
+    <p class="price">₱3,200.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="category-product-card" data-category="warlord" data-name="Boa Hancock Figure" data-description="A figure of Boa Hancock, the ruler of Amazon Lily and a former Warlord of the Sea." data-image="boa-hancock-figure.jpg">
+    <img src="figures/boa-figure.webp" alt="Boa Hancock Figure">
+    <h3>Boa Hancock Figure</h3>
+    <p>A figure of Boa Hancock, the ruler of Amazon Lily and a former Warlord of the Sea.</p>
+    <p class="price">₱2,800.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 3 -->
+  <div class="category-product-card" data-category="warlord" data-name="Bartholomew Kuma Figure" data-description="A figure of Bartholomew Kuma, the tyrant and former Warlord of the Sea." data-image="kuma-figure.jpg">
+    <img src="figures/kuma-figure.webp" alt="Bartholomew Kuma Figure">
+    <h3>Bartholomew Kuma Figure</h3>
+    <p>A figure of Bartholomew Kuma, the tyrant and former Warlord of the Sea.</p>
+    <p class="price">₱3,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 4 -->
+  <div class="category-product-card" data-category="warlord" data-name="Jinbe Figure" data-description="A figure of Jinbe, the fish-man warrior and former Warlord of the Sea." data-image="jinbe-warlord-figure.jpg">
+    <img src="figures/jinbe1-figure.png" alt="Jinbe Figure">
+    <h3>Jinbe Figure</h3>
+    <p>A figure of Jinbe, the fish-man warrior and former Warlord of the Sea.</p>
+    <p class="price">₱2,900.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 5 -->
+  <div class="category-product-card" data-category="warlord" data-name="Dr. Vegapunk Figure" data-description="A figure of Dr. Vegapunk, a brilliant scientist and key figure in the Warlord of the Sea operation." data-image="vegapunk-figure.jpg">
+    <img src="figures/drvegapunk-figure.jpg" alt="Dr. Vegapunk Figure">
+    <h3>Dr. Vegapunk Figure</h3>
+    <p>A figure of Dr. Vegapunk, a brilliant scientist and key figure in the Warlord of the Sea operation.</p>
+    <p class="price">₱1,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 6 -->
+  <div class="category-product-card" data-category="warlord" data-name="Trafalgar D. Water Law Figure" data-description="A figure of Trafalgar D. Water Law, a former Warlord of the Sea and captain of the Heart Pirates." data-image="law-figure.jpg">
+    <img src="figures/law3.webp" alt="Trafalgar D. Water Law Figure">
+    <h3>Trafalgar D. Water Law Figure</h3>
+    <p>A figure of Trafalgar D. Water Law, a former Warlord of the Sea and captain of the Heart Pirates.</p>
+    <p class="price">₱3,400.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 7 -->
+  <div class="category-product-card" data-category="warlord" data-name="Crocodile Figure" data-description="A figure of Crocodile, the former Warlord of the Sea and leader of Baroque Works." data-image="crocodile-figure.jpg">
+    <img src="figures/crocodile-figure.webp" alt="Crocodile Figure">
+    <h3>Crocodile Figure</h3>
+    <p>A figure of Crocodile, the former Warlord of the Sea and leader of Baroque Works.</p>
+    <p class="price">₱2,200.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 8 -->
+  <div class="category-product-card" data-category="warlord" data-name="Moria Figure" data-description="A figure of Gecko Moria, the former Warlord of the Sea and leader of the Thriller Bark Pirates." data-image="moria-figure.jpg">
+    <img src="figures/moria-figure.png" alt="Moria Figure">
+    <h3>Moria Figure</h3>
+    <p>A figure of Gecko Moria, the former Warlord of the Sea and leader of the Thriller Bark Pirates.</p>
+    <p class="price">₱3,100.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 9 -->
+  <div class="category-product-card" data-category="warlord" data-name="Doflamingo Figure" data-description="A figure of Donquixote Doflamingo, the former Warlord of the Sea and leader of the Donquixote Pirates." data-image="doflamingo-figure.jpg">
+    <img src="figures/doflamingo-figure.jpg" alt="Doflamingo Figure">
+    <h3>Doflamingo Figure</h3>
+    <p>A figure of Donquixote Doflamingo, the former Warlord of the Sea and leader of the Donquixote Pirates.</p>
+    <p class="price">₱3,300.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+
+<!-- Four Emperors Figures -->
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="category-product-card" data-category="emperors" data-name="Kaido Figure" data-description="A figure of Kaido, the King of the Beasts and one of the Four Emperors." data-image="kaido-figure.jpg">
+    <img src="figures/kaido figure.webp" alt="Kaido Figure">
+    <h3>Kaido Figure</h3>
+    <p>A figure of Kaido, the King of the Beasts and one of the Four Emperors.</p>
+    <p class="price">₱3,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 2 -->
+  <div class="category-product-card" data-category="emperors" data-name="Big Mom Figure" data-description="A figure of Charlotte Linlin (Big Mom), one of the Four Emperors." data-image="big-mom-figure.jpg">
+    <img src="figures/bigmom-figure.png" alt="Big Mom Figure">
+    <h3>Big Mom Figure</h3>
+    <p>A figure of Charlotte Linlin (Big Mom), one of the Four Emperors.</p>
+    <p class="price">₱1,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 3 -->
+  <div class="category-product-card" data-category="emperors" data-name="Shanks Figure" data-description="A figure of Shanks, one of the Four Emperors, with his signature sword." data-image="shanks-figure.jpg">
+    <img src="figures/shanks-figure.webp" alt="Shanks Figure">
+    <h3>Shanks Figure</h3>
+    <p>A figure of Shanks, one of the Four Emperors, with his signature sword.</p>
+    <p class="price">₱3,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 4 -->
+  <div class="category-product-card" data-category="emperors" data-name="Blackbeard Figure" data-description="A figure of Marshall D. Teach (Blackbeard), one of the Four Emperors." data-image="blackbeard-figure.jpg">
+    <img src="figures/blackbeared-figure.webp" alt="Blackbeard Figure">
+    <h3>Blackbeard Figure</h3>
+    <p>A figure of Marshall D. Teach (Blackbeard), one of the Four Emperors.</p>
+    <p class="price">₱3,100.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+  
+  <!-- Product 5 -->
+  <div class="category-product-card" data-category="emperors" data-name="Whitebeard Figure" data-description="A powerful figure of Edward Newgate, the legendary Whitebeard." data-image="figures/whitebeard-figure.webp">
+    <img src="figures/whitebeard-figure.png" alt="Whitebeard Figure">
+    <h3>Whitebeard Figure</h3>
+    <p>A powerful figure of Edward Newgate, the legendary Whitebeard.</p>
+    <p class="price">₱3,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+<!-- Product 6 -->
+  <div class="category-product-card" data-category="emperors" data-name="Shanks Figure Limited Edition" data-description="A limited edition figure of Shanks, showcasing his legendary status." data-image="shanks-limited-figure.jpg">
+    <img src="figures/shanks1-figure.webp" alt="Shanks Limited Edition Figure">
+    <h3>Shanks Limited Edition Figure</h3>
+    <p>A limited edition figure of Shanks, showcasing his legendary status.</p>
+    <p class="price">₱2,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+
+<!-- Worst Generation Figures -->
+<div class="product-grid">
+  <!-- Product 1 -->
+  <div class="category-product-card" data-category="generation" data-name="Luffy Figure" data-description="A figure of Monkey D. Luffy, the captain of the Strawhat Pirates." data-image="luffy-worst-gen-figure.jpg">
+    <img src="figures/luffy2-figure.webp" alt="Luffy Figure">
+    <h3>Luffy Figure</h3>
+    <p>A figure of Monkey D. Luffy, the captain of the Strawhat Pirates.</p>
+    <p class="price">₱3,100.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="category-product-card" data-category="generation" data-name="Kid Figure" data-description="A figure of Eustass Kid, one of the Worst Generation and captain of the Kid Pirates." data-image="kid-figure.jpg">
+    <img src="figures/kid-figure.jpg" alt="Kid Figure">
+    <h3>Kid Figure</h3>
+    <p>A figure of Eustass Kid, one of the Worst Generation and captain of the Kid Pirates.</p>
+    <p class="price">₱3,200.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="category-product-card" data-category="generation" data-name="Law Figure" data-description="A figure of Trafalgar D. Water Law, a member of the Worst Generation." data-image="law-worst-gen-figure.jpg">
+    <img src="figures/law-figure.webp" alt="Law Figure">
+    <h3>Law Figure</h3>
+    <p>A figure of Trafalgar D. Water Law, a member of the Worst Generation.</p>
+    <p class="price">₱3,400.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="category-product-card" data-category="generation" data-name="Zoro Worst Gen Figure" data-description="A figure of Roronoa Zoro, the swordsman of the Strawhat Pirates." data-image="zoro-worst-gen-figure.jpg">
+    <img src="figures/zoro1-figure.webp" alt="Zoro Worst Gen Figure">
+    <h3>Zoro Worst Gen Figure</h3>
+    <p>A figure of Roronoa Zoro, the swordsman of the Strawhat Pirates.</p>
+    <p class="price">₱3,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="category-product-card" data-category="generation" data-name="Drake Figure" data-description="A figure of X Drake, a former Marine officer and a member of the Worst Generation." data-image="drake-figure.jpg">
+    <img src="figures/drake-figure.webp" alt="Drake Figure">
+    <h3>Drake Figure</h3>
+    <p>A figure of X Drake, a former Marine officer and a member of the Worst Generation.</p>
+    <p class="price">₱3,300.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="category-product-card" data-category="generation" data-name="Apoo Figure" data-description="A figure of Scratchmen Apoo, a member of the Worst Generation." data-image="apoo-figure.jpg">
+    <img src="figures/apo-figure.webp" alt="Apoo Figure">
+    <h3>Apoo Figure</h3>
+    <p>A figure of Scratchmen Apoo, a member of the Worst Generation.</p>
+    <p class="price">₱2,600.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 7 -->
+  <div class="category-product-card" data-category="generation" data-name="Hawkins Figure" data-description="A figure of Basil Hawkins, a member of the Worst Generation." data-image="hawkins-figure.jpg">
+    <img src="figures/hawkins-figure.webp" alt="Hawkins Figure">
+    <h3>Hawkins Figure</h3>
+    <p>A figure of Basil Hawkins, a member of the Worst Generation.</p>
+    <p class="price">₱2,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="category-product-card" data-category="generation" data-name="Urouge Figure" data-description="A figure of Urouge, a member of the Worst Generation." data-image="urouge-figure.jpg">
+    <img src="figures/urouge-figure.webp" alt="Urouge Figure">
+    <h3>Urouge Figure</h3>
+    <p>A figure of Urouge, a member of the Worst Generation.</p>
+    <p class="price">₱3,500.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="category-product-card" data-category="generation" data-name="Capone Bege Figure" data-description="A figure of Capone Bege, a member of the Worst Generation." data-image="bege-figure.jpg">
+    <img src="figures/capone-figure.webp" alt="Capone Bege Figure">
+    <h3>Capone Bege Figure</h3>
+    <p>A figure of Capone Bege, a member of the Worst Generation.</p>
+    <p class="price">₱3,000.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="category-product-card" data-category="generation" data-name="Killer Figure" data-description="A figure of Killer, the second-in-command of the Kid Pirates and a member of the Worst Generation." data-image="killer-figure.jpg">
+    <img src="figures/killer-figure.webp" alt="Killer Figure">
+    <h3>Killer Figure</h3>
+    <p>A figure of Killer, the second-in-command of the Kid Pirates and a member of the Worst Generation.</p>
+    <p class="price">₱2,900.00</p>
+    <button class="btn buy-btn">Buy</button>
+    <button class="btn heart-btn">&#10084; Add to Wishlist</button>
+  </div>
+</section>
+  
+
+
+<!-- Buy Modal -->
+<div id="buyModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Confirm Your Purchase</h2>
+    <p id="selected-product-name"></p>
+
+    <!-- Name Field -->
+    <label for="user-name">Name:</label>
+    <input type="text" id="user-name" placeholder="Enter your full name" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="1" value="1">
+
+    <label for="payment-method">Payment Method:</label>
+<select id="payment-method">
+  <option value="GCash">GCash</option>
+  <option value="Cash on Delivery">Cash on Delivery</option>
+</select>
+
+
+    <!-- ✅ GCash Number Field -->
+    <label for="gcash-number">GCash Number:</label>
+    <input type="text" id="gcash-number" placeholder="e.g. 09XXXXXXXXX">
+
+     <!-- Call Number Field -->
+     <label for="call-number">Call Number:</label>
+     <input type="text" id="call-number" placeholder="Enter your contact number">
+
+    <!-- ✅ Shipping Address Field -->
+    <label for="shipping-address">Shipping Address:</label>
+    <textarea id="shipping-address" placeholder="Enter your complete address"></textarea>
+
+   
+
+    <button id="confirm-buy-btn" class="btn">Confirm Purchase</button>
+  </div>
+</div>
+
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-overlay">
+    <h2 class="fade-in">About Riri's Laugh Tale Treasures</h2>
+    <div class="about-content fade-in-up">
+      <p>
+        Welcome aboard, nakama! At <strong>Riri's Laugh Tale Treasures</strong>, we specialize in rare and exclusive <em>One Piece</em> figures and collectibles straight from the Grand Line.
+      </p>
+
+      <p>
+        Whether you're a Straw Hat supporter, a Warlord fan, or an Emperor enthusiast, we’ve got treasures that bring your favorite characters to life!
+      </p>
+
+      <p>
+        Our collection features Japan-limited editions, high-quality sculpts, and legendary scenes from the anime and manga — each piece is a tribute to <strong>Eiichiro Oda’s</strong> masterpiece.
+      </p>
+
+      <p>
+        ⚓ <strong>Our Mission:</strong> To deliver authentic, premium figures that ignite your passion for adventure and storytelling — one treasure at a time.
+      </p>
+
+      <p>
+        🏴‍☠️ <strong>Why Choose Us?</strong> Because we’re not just sellers — we’re fans, collectors, and pirates at heart. Join our crew and find your own piece of the One Piece world!
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  
+  <div class="service-list">
+    <div class="service-item">
+      <h3>Fast Shipping</h3>
+      <p>We ensure quick and safe delivery of your orders worldwide.</p>
+    </div>
+    <div class="service-item">
+      <h3>Premium Quality</h3>
+      <p>We guarantee the best quality for all our figures and collectibles.</p>
+    </div>
+    <div class="service-item">
+      <h3>Exclusive Collections</h3>
+      <p>Discover rare, Japan-limited edition figures available only at Riri's Laugh Tale Treasures.</p>
+    </div>
+    <div class="service-item">
+      <h3>Customer Support</h3>
+      <p>Our team is always ready to assist you with any questions or issues.</p>
+    </div>
+    <div class="service-item">
+      <h3>Worldwide Shipping</h3>
+      <p>We offer global shipping options, bringing One Piece treasures to your doorstep, no matter where you are.</p>
+    </div>
+    <div class="service-item">
+      <h3>Secure Payment</h3>
+      <p>Your transactions are protected with the highest level of security, ensuring peace of mind with every purchase.</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+  <h2>Customer Reviews</h2>
+  <div class="testimonial-list">
+    <div class="testimonial-item">
+      <p>"Riri's Laugh Tale Treasures has the best One Piece figures! Highly recommended!" - Jane D.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"Great quality and amazing customer service. I'll be back for more!" - Mike S.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"An unforgettable shopping experience! The figures are top-notch. Highly recommend this store!" - Sarah W.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"Amazing selection and excellent prices! My go-to store for One Piece figures!" - John K.</p>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Contact Section -->
+ <section class="contact" id="contact">
+  <h2>Contact</h2>
+  <form id="contactForm" class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone Number" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+  
+    <div class="footer-info">
+      <p>&copy; 2025 Riri's Laugh Tale Treasures. All rights reserved.</p>
+      <p>Contact us: treasureriri@gmail.com</p>
+      <p>Follow us on social media for updates and offers!</p>
+    </div>
+  
+  </footer>
+
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+    let cart = [];
+    let wishlist = [];
+    let selectedProduct = null;
+
+    const modal = document.getElementById('buyModal');
+    const selectedProductName = document.getElementById('selected-product-name');
+    const quantityInput = document.getElementById('quantity');
+    const paymentSelect = document.getElementById('payment-method');
+    const gcashNumberInput = document.getElementById('gcash-number');
+    const shippingAddressInput = document.getElementById('shipping-address');
+    const callNumberInput = document.getElementById('call-number');
+    const userNameInput = document.getElementById('user-name');  // New field for name
+    const confirmBuyBtn = document.getElementById('confirm-buy-btn');
+    const closeModalBtn = document.querySelector('.close-btn');
+
+    // Buy Now logic
+    function buyNow(product) {
+        selectedProduct = product;
+        selectedProductName.textContent = `Product: ${product.name}`;
+        quantityInput.value = 1;
+        paymentSelect.value = "GCash";  // Default to GCash
+        gcashNumberInput.value = '';
+        shippingAddressInput.value = '';
+        callNumberInput.value = '';  // Reset call number field
+        userNameInput.value = '';  // Reset name field
+        modal.style.display = 'block';  // Ensure modal is visible
+    }
+
+    document.querySelectorAll('.buy-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = button.closest('.category-product-card');
+            const product = {
+                name: productCard.querySelector('h3').innerText,
+                description: productCard.querySelector('p').innerText,
+                image: productCard.querySelector('img').src
+            };
+            buyNow(product);
+        });
+    });
+
+    confirmBuyBtn.addEventListener('click', () => {
+        const quantity = quantityInput.value;
+        const paymentMethod = paymentSelect.value;
+        const gcashNumber = gcashNumberInput.value.trim();
+        const shippingAddress = shippingAddressInput.value.trim();
+        const callNumber = callNumberInput.value.trim();
+        const userName = userNameInput.value.trim();  // Get the user's name
+
+        // Validation based on payment method
+        if (paymentMethod === "GCash") {
+            // Validate if it's GCash payment method
+            if (!gcashNumber || !shippingAddress || !callNumber || !userName) {
+                alert("Please enter your name, GCash number, shipping address, and call number.");
+                return;
+            }
+        } else if (paymentMethod === "Cash on Delivery") {
+            // Validate if it's Cash on Delivery
+            if (!shippingAddress || !callNumber || !userName) {
+                alert("Please enter your name, shipping address, and call number.");
+                return;
+            }
+        }
+
+        // Add data to the cart
+        cart.push({
+            ...selectedProduct,
+            quantity,
+            paymentMethod,
+            userName,  // Store the user's name
+            gcashNumber: paymentMethod === "GCash" ? gcashNumber : "",  // Store GCash number only if it's GCash payment
+            shippingAddress,
+            callNumber  // Store the call number in the cart
+        });
+
+        alert(`Thank you, ${userName}! You purchased ${quantity} ${selectedProduct.name}(s) via ${paymentMethod}.`);
+        modal.style.display = 'none';
+    });
+
+    // Close modal button
+    closeModalBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Wishlist logic (same as before)
+    document.querySelectorAll('.heart-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = button.closest('.category-product-card');
+            const product = {
+                name: productCard.querySelector('h3').innerText,
+                description: productCard.querySelector('p').innerText,
+                image: productCard.querySelector('img').src
+            };
+            wishlist.push(product);
+            console.log('Product added to wishlist:', product);
+            alert('Added to Wishlist!');
+        });
+    });
+
+    // Product filtering (same as before)
+    const filterButtons = document.querySelectorAll('.filter-option');
+    const productCards = document.querySelectorAll('.category-product-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const category = button.getAttribute('data-category');
+
+            productCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                card.style.display = (category === 'all' || cardCategory === category) ? 'block' : 'none';
+            });
+        });
+    });
+});
+
+</script>
+
+<script> 
+  // Function to open the modal and show the specific form (login or signup)
+  function openModal(formType) {
+    const modal = document.getElementById('modal');
+    const loginForm = document.querySelector('.login');
+    const signupForm = document.querySelector('.registration');
+    
+    if (formType === 'login') {
+      loginForm.style.display = 'block';
+      signupForm.style.display = 'none';
+    } else {
+      loginForm.style.display = 'none';
+      signupForm.style.display = 'block';
+    }
+    
+    modal.style.display = 'flex'; // Makes the modal visible
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none'; // Hides the modal
+  }
+
+  // Event listener to close the modal when the close button is clicked
+  const closeButton = document.querySelector(".close-btn");
+  closeButton.addEventListener("click", closeModal);
+</script>
+
+</body>
+</html>
+
